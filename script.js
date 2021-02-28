@@ -6,11 +6,10 @@ var tracker = [];
 var letters = document.getElementsByTagName('DIV');
 
 function letterGet(e) {
-    if (e.key === ' ') {
+    if (e.key === ' ' || e.type === 'touchstart') {
         for (let i = 0; i < letters.length; i++) {
             var rando = Math.random();
             if (i === 1) {
-                console.log('1 - ', tracker);
                 if (tracker[0] === 'vowel') {
                     if (rando > 0.3) {
                         letters[i].innerText = consonantsOne[Math.floor(Math.random() * 14)];
@@ -22,7 +21,6 @@ function letterGet(e) {
                 }
 
             } else if (i === 3) {
-                console.log('3 - ', tracker);
                 if (tracker[1] === 'vowel') {
                     if (rando > 0.3) {
                         letters[i].innerText = consonantsOne[Math.floor(Math.random() * 14)];
