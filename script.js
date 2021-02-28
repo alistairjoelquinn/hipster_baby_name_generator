@@ -4,7 +4,7 @@ var rare = ['x', 'z', 'q', 'j', 'p', 'y', 'v'];
 
 var letters = document.getElementsByTagName('DIV');
 
-document.addEventListener('keydown', (e) => {
+function letterGet(e) {
     if (e.key === ' ') {
         for (let i = 0; i < letters.length; i++) {
             const rando = Math.random();
@@ -17,4 +17,7 @@ document.addEventListener('keydown', (e) => {
             }
         }
     }
-});
+}
+
+document.addEventListener('keydown', letterGet);
+document.addEventListener('touchstart', letterGet);
