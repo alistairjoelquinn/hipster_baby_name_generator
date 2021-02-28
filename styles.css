@@ -1,5 +1,4 @@
 body {
-    /* background-color: darkseagreen; */
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -17,11 +16,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid black; */
 }
 
 div {
-    /* background-color: #fff; */
     display: inline-block;
     font-size: 160px;
 }
@@ -32,6 +29,7 @@ div:nth-child(1) {
 
 h3 {
     margin: 10px;
+    text-align: center;
 }
 
 @media screen and (max-width: 800px) {
